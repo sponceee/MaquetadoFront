@@ -6,7 +6,6 @@
 }
 
 .encabezado {
-
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -17,6 +16,7 @@
     flex: 33%; 
     margin-top: 65px;
     text-align: center;
+  
 
 }
 
@@ -25,6 +25,11 @@
     flex:33%;
     text-align: center;
     margin-top: 65px;
+}
+
+.encabezado .hambur{
+
+    display: none;
 }
 
 .botonstarted{
@@ -66,6 +71,23 @@ nav ul li{
 
 }
 
+.articulotitulo__{
+
+    width: 500px;
+
+}
+
+.cajaarticulo{
+
+    width:340px;
+    padding-top: 35px;
+    padding-bottom: 25px ;
+}
+
+.pregunta h2{
+    width:433px;
+}
+
 .articuloimg{
 
     flex:50%;
@@ -78,8 +100,8 @@ nav ul li{
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 70px; 
     flex-wrap: wrap;
+    padding-top: 150px;
 
 }
 
@@ -98,8 +120,11 @@ nav ul li{
 }
 
 .articulo3{
-
+    width: 80%;
     text-align: center;
+    padding-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -114,6 +139,7 @@ nav ul li{
     flex:33%;
     position: relative;
 }
+
 
 .articulo4{ 
     width:100%;
@@ -135,7 +161,8 @@ nav ul li{
     flex: 33%;
 }
 .p2{
-    flex:33%
+    flex:33%;
+ 
 }
 
 .p3{
@@ -146,6 +173,8 @@ nav ul li{
 .p2 ul{
 
     display: inline-block;
+    text-align:justify;
+    padding-right: 100px;
 }
 
 .gs{
@@ -191,7 +220,7 @@ h2{
     font-size: 36px;
 }
 .numeros{
-
+    size:15px;
     display: inline-block;
     background-color: #F3603B;
     border-radius: 50px;
@@ -214,25 +243,27 @@ h2{
 .avatar{
 
     position:absolute;
-    top: -250px;
+    top: -230px;
     left: 0;
     right: 0;
     bottom: 0;
     margin: auto; 
+    max-width: 110px;
+    min-width: 110px;
 
 }
 
 .articulo3 h2{
 
     height:100px;
-    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 
 .testimonio__1{
 
     background-color: #FAFAFA;
-    width:100%;
+    width:98%;
     height:170px;
     padding-top:50px;
     margin-top: 100px;
@@ -248,6 +279,7 @@ h2{
 
 footer{
     height: 247px;
+    width: 100%;
     color: #FAFAFA;
     background-color: #1E1E26;
     align-items: center;
@@ -260,10 +292,6 @@ footer{
     
 }
 
-.pie .p2 ul{
-
-    text-align:start;
-}
 
 .pie .p3 p{
     color:#8C8C94;
@@ -279,29 +307,74 @@ footer{
 }
 
 
+
+
 @media(max-width: 375px){
 
+ 
+    #botonnm{
+        display: none;
+    }
+    .menu{
 
-    .articulo1{
-        flex-direction: column-reverse;
+        display: none;
     }
 
+    .encabezado .hambur{    
+
+        display: block;
+        position: absolute;
+        right: 40px;
+        margin-top: 30px;
+    }
+
+    .articulotitulo__{
+
+        text-align: center;
+    }
+    .articulo1{
+        flex-direction: column-reverse;
+        width:100%;
+    }
+
+    .cajaarticulo{
+
+        width: auto;
+    }
+
+  
+    .articulo2 .pregunta{
+
+        text-align: center;
+        
+    }
     h1{
 
-        font-size: 35px;
+        font-size: 25px;
 
     }
 
     h2{
         font-size: 20px;
     }
+    .pregunta h2{
+        width:auto;
+    }
+    h3{
+        font-size:17px ;
+    }
 
-  
+    
+    .articulotitulo__{
+
+        width: 100%;
+
+    }
     p{
         font-size: 15px;
     }
     
-    img{
+    .grafico{
         max-width: 100%;
         min-width: 100%;
     }
@@ -311,29 +384,18 @@ footer{
     }
 
     .testimonio__{
-        visibility: hidden;
         flex:100%;
     }
-    #mostrar{
-
-        visibility: visible;
-
-    }
-
-    .avatar{
-        max-width: 100px;
-        min-width: 100px;
-
-    }
-
+   
     .respuestas3{
         margin-top: 20px;
         flex:100%;
     }
     .numeros{
-        padding: 0px;
+        font-size:10px;
         width:50px;
-        height:40px;
+        height:25px;
+        padding-bottom:3px;
 
     }
     .articulotitulo{
@@ -343,4 +405,32 @@ footer{
     .articulo4{
         flex-direction: column;
     }
+
+    footer{
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .p1{
+        padding-top:50px;
+    }
+    .nomostrar{
+        display: none;
+    }
+
+    footer{
+    
+        flex-direction: column-reverse;
+    }
+
+    .p1 ul li{
+
+        margin-right:20px;
+        padding-bottom: 30px;
+    }
+
+    .p3{
+        padding-top: 30px;
+    }
+    
     }

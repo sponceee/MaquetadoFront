@@ -3,13 +3,13 @@
   padding: 0;
   list-style:none;
   font-family: Be Vietnam;
-  flex-wrap: wrap;
 }
 
 .encabezado {
 
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .logo{
@@ -45,11 +45,6 @@ nav ul li{
     margin:5px;
 }
 
-.imgposicionar{
-    position: relative;
-    right: 0px;
-
-}
 .articulo1{
 
     display: flex;
@@ -59,6 +54,7 @@ nav ul li{
     margin-top: 70px;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     
 }
 
@@ -83,6 +79,7 @@ nav ul li{
     margin-left: auto;
     margin-right: auto;
     margin-top: 70px; 
+    flex-wrap: wrap;
 
 }
 
@@ -109,6 +106,7 @@ nav ul li{
 .testimonios{
 
     display: flex;
+    flex-wrap: wrap;
 
 }
 
@@ -130,6 +128,7 @@ nav ul li{
 
 .pie{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .p1{
@@ -175,10 +174,10 @@ nav ul li{
 
 h1 {
 
-font-style: normal;
-font-weight: bold;
-font-size: 58px;
-line-height: 66px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 58px;
+    line-height: 66px;
 
 }
 
@@ -212,7 +211,7 @@ h2{
 
 }
 
-#avatar{
+.avatar{
 
     position:absolute;
     top: -250px;
@@ -230,7 +229,7 @@ h2{
 }
 
 
-#testimonio__1{
+.testimonio__1{
 
     background-color: #FAFAFA;
     width:100%;
@@ -280,40 +279,68 @@ footer{
 }
 
 
-/*@media only screen and (max-width: 375px){
+@media(max-width: 375px){
 
 
-
+    .articulo1{
+        flex-direction: column-reverse;
+    }
 
     h1{
 
-        font-size: 30px;
+        font-size: 35px;
 
     }
 
     h2{
-    
-        font-size: 25px;
-        
-    }
-
-    p{
         font-size: 20px;
     }
+
+  
+    p{
+        font-size: 15px;
+    }
     
-
     img{
-
         max-width: 100%;
         min-width: 100%;
     }
 
-    .none{
-
-        display: none;
+    .articuloimg{
+        flex:100%;
     }
 
+    .testimonio__{
+        visibility: hidden;
+        flex:100%;
+    }
+    #mostrar{
 
+        visibility: visible;
 
+    }
 
-}*/
+    .avatar{
+        max-width: 100px;
+        min-width: 100px;
+
+    }
+
+    .respuestas3{
+        margin-top: 20px;
+        flex:100%;
+    }
+    .numeros{
+        padding: 0px;
+        width:50px;
+        height:40px;
+
+    }
+    .articulotitulo{
+        text-align: center;
+    }
+
+    .articulo4{
+        flex-direction: column;
+    }
+    }

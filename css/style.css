@@ -160,6 +160,15 @@ nav ul li{
 .p1{
     flex: 33%;
 }
+
+.testimonio__:hover{
+    
+    transform:scale(1.1);
+    transition: 1s;
+    z-index: 1;
+    
+
+}
 .p2{
     flex:33%;
  
@@ -170,10 +179,16 @@ nav ul li{
     flex:33%;
 }
 
+li:hover{
+
+    color:#F3603B;
+
+
+}
 .p2 ul{
 
     display: inline-block;
-    text-align:justify;
+    text-align:center;
     padding-right: 100px;
 }
 
@@ -201,6 +216,20 @@ nav ul li{
     color: #F3603B;
 }
 
+.gs:hover{
+
+     background-color: #FFFFFF;
+     color: #F3603B;
+     transition: 1s;
+
+}
+
+.gs2:hover{
+    background-color: #F3603B;
+     color: #FFFFFF;
+     transition: 1s;
+}
+
 h1 {
 
     font-style: normal;
@@ -220,18 +249,19 @@ h2{
     font-size: 36px;
 }
 .numeros{
-    size:15px;
+    font-size:15px;
     display: inline-block;
     background-color: #F3603B;
     border-radius: 50px;
     border-style: none;
-    width: 69px;
-    height: 43px;
+    width: 62px;
+    height: 40px;
     color:#FFFFFF;
     text-align: center;
     position: absolute;
-    left:0px;
-    padding-top: 8px;
+    padding-top: 7px;
+    left: 0px;
+    margin-right:5px;
 }
 
 .respuestas{
@@ -270,6 +300,14 @@ h2{
     margin-bottom: 50px;
 
    }
+
+.testimonio__1:hover{
+
+    background-color: #F3603B;
+    transition:2s;
+   
+
+}
 
 .articulo4 h2{
     
@@ -334,8 +372,14 @@ footer{
     }
     .articulo1{
         flex-direction: column-reverse;
-        width:100%;
+
     }
+
+    .articulo3 h2{
+
+        padding-top:10px;
+    }
+
 
     .cajaarticulo{
 
@@ -393,10 +437,9 @@ footer{
     }
     .numeros{
         font-size:10px;
-        width:50px;
-        height:25px;
-        padding-bottom:3px;
-
+        width:47px;
+        height:24px;
+        
     }
     .articulotitulo{
         text-align: center;
@@ -429,6 +472,10 @@ footer{
         padding-bottom: 30px;
     }
 
+    .p2 ul{
+        padding: 20px;
+        margin-top: 10px;
+    }
     .p3{
         padding-top: 30px;
     }
